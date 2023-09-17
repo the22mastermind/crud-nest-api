@@ -35,11 +35,12 @@ $ yarn install
 ## Running the app
 
 ```bash
-# development
-$ yarn run start
+# development mode
+$ yarn dev:db:restart # Starts the db container and applies migrations
 
-# watch mode
-$ yarn run start:dev
+$ yarn run start:dev # Start NestJs server in watch mode
+
+$ npx prisma studio # Start Prisma studio in browser at http://localhost:5555
 
 # production mode
 $ yarn run start:prod
